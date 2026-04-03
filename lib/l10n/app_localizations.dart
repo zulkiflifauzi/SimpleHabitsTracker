@@ -848,6 +848,42 @@ abstract class AppLocalizations {
   /// **'Disable'**
   String get disableAuthConfirm;
 
+  /// No description provided for @intentionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s Intention'**
+  String get intentionTitle;
+
+  /// No description provided for @intentionHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What do you want to focus on today?'**
+  String get intentionHint;
+
+  /// No description provided for @intentionPlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Set your intention for today…'**
+  String get intentionPlaceholder;
+
+  /// No description provided for @intentionSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get intentionSave;
+
+  /// No description provided for @intentionClear.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear'**
+  String get intentionClear;
+
+  /// No description provided for @intentionEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No intention set'**
+  String get intentionEmpty;
+
   /// No description provided for @detailBadges.
   ///
   /// In en, this message translates to:

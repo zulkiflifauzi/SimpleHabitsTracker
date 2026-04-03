@@ -421,6 +421,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get disableAuthConfirm => 'Disable';
 
   @override
+  String get intentionTitle => 'Today\'s Intention';
+
+  @override
+  String get intentionHint => 'What do you want to focus on today?';
+
+  @override
+  String get intentionPlaceholder => 'Set your intention for today…';
+
+  @override
+  String get intentionSave => 'Save';
+
+  @override
+  String get intentionClear => 'Clear';
+
+  @override
+  String get intentionEmpty => 'No intention set';
+
+  @override
   String get detailBadges => 'Badges';
 
   @override

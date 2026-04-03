@@ -175,6 +175,13 @@
   "disableAuthBody": "Ini akan mematikan layar kunci. Anda bisa mengaktifkannya kembali di Pengaturan.",
   "disableAuthConfirm": "Nonaktifkan",
 
+  "intentionTitle": "Niat Hari Ini",
+  "intentionHint": "Apa yang ingin Anda fokuskan hari ini?",
+  "intentionPlaceholder": "Tetapkan niat Anda untuk hari ini…",
+  "intentionSave": "Simpan",
+  "intentionClear": "Hapus",
+  "intentionEmpty": "Belum ada niat",
+
   "detailBadges": "Lencana",
   "badgeFirstStep": "Langkah Pertama",
   "badgeFirstStepDesc": "Selesaikan check-in pertama Anda",
