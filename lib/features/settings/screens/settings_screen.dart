@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/extensions/context_extensions.dart';
 import '../../auth/services/auth_service.dart' show AuthService, AuthResult;
+import '../../help/screens/help_screen.dart';
 import '../providers/settings_provider.dart';
 
 // Maps ThemeMode → icon
@@ -89,6 +90,20 @@ class SettingsScreen extends ConsumerWidget {
           _BiometricTile(
             enabled: settings.authEnabled,
             onChanged: (value) => _toggleAuth(context, ref, value),
+          ),
+
+          const Divider(height: 32),
+
+          // ── Help ───────────────────────────────────────────────────────
+          _SectionHeader(l10n.help),
+          ListTile(
+            leading: const Icon(Icons.menu_book_rounded),
+            title: Text(l10n.userGuide),
+            subtitle: Text(l10n.userGuideSubtitle),
+            trailing: const Icon(Icons.chevron_right_rounded),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const HelpScreen()),
+            ),
           ),
         ],
       ),

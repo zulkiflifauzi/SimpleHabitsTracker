@@ -122,7 +122,9 @@ lib/l10n/                  # ARB files + generated AppLocalizations
 
 **Milestone Badges** — Computed on-the-fly from `longestStreak` and `totalCompletions` in `BadgeCalculator`. No DB table. Displayed in the habit detail screen between Stats and History. 8 badges: First Step (1 completion), Week Warrior (7-day streak), Fortnight (14-day), Monthly Master (30-day), Century Streak (100-day), Year of Habit (365-day), Dedicated (50 completions), Century Club (100 completions).
 
-**Archive** — Archived habits can be restored (moved back to active) or deleted permanently via a ⋮ menu on each tile. `unarchiveHabit()` and `deleteHabit()` already existed in `HabitsDao`.
+**Archive** — Archived habits can be restored (moved back to active) or deleted permanently via a ⋮ menu on each tile.
+
+**User Guide** — `lib/features/help/screens/help_screen.dart`. 11 `ExpansionTile` sections covering every feature. Accessible from Settings → Help section (new `_SectionHeader` + `ListTile`). All content is in ARB files (EN + ID) — keys prefixed `guide*`. `unarchiveHabit()` and `deleteHabit()` already existed in `HabitsDao`.
 
 ---
 
@@ -191,5 +193,6 @@ Streaks and check-ins work identically for both modes.
 - **v1.0** — Habit creation, Home/Today screen, notifications, categories, home screen widget, streak tracking, grace period, **biometric/PIN lock screen**, **multilanguage (English + Bahasa Indonesia)**, **onboarding (language + security setup)**, **Settings screen**
 - **v1.5** — Heatmap, weekly/monthly charts, journal notes, pause habit, habit detail screen, **dark/light/system theme toggle**
 - **v2.0** — ~~Milestone badges~~ ✓, ~~Archive restore/delete~~ ✓, ~~Daily Intention screen~~ ✓, ~~per-habit accent color~~ ✓ (shipped in v1.5)
+- **v2.1** — ~~In-app User Guide~~ ✓
 
 **Out of scope:** social features, AI coaching, cloud sync, gamification points.
