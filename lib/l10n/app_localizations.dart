@@ -848,6 +848,156 @@ abstract class AppLocalizations {
   /// **'Disable'**
   String get disableAuthConfirm;
 
+  /// No description provided for @help.
+  ///
+  /// In en, this message translates to:
+  /// **'Help'**
+  String get help;
+
+  /// No description provided for @userGuide.
+  ///
+  /// In en, this message translates to:
+  /// **'User Guide'**
+  String get userGuide;
+
+  /// No description provided for @userGuideSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn how to use Simple Habits Tracker'**
+  String get userGuideSubtitle;
+
+  /// No description provided for @guideGettingStartedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting Started'**
+  String get guideGettingStartedTitle;
+
+  /// No description provided for @guideGettingStartedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Simple Habits Tracker helps you build better habits one day at a time.\n\nWhen you first open the app, you will be guided through a short setup:\n• Choose your preferred language\n• Optionally enable biometric or PIN lock to protect your data\n\nOnce setup is complete, you land on the Today screen where all your habits live.'**
+  String get guideGettingStartedBody;
+
+  /// No description provided for @guideTodayScreenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Today Screen'**
+  String get guideTodayScreenTitle;
+
+  /// No description provided for @guideTodayScreenBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The Today screen is your daily dashboard.\n\n• Habits are grouped by category\n• Each card shows the habit name, streak, and today\'s check-in status\n• Tap the check button on a card to log a quick completion\n• Tap the card itself to open the check-in sheet and add a value or note\n• Tap ⋮ on a card for more options: View Details, Edit, Pause\n• The Daily Intention card at the top lets you set a focus for the day\n• Tap + (bottom right) to add a new habit'**
+  String get guideTodayScreenBody;
+
+  /// No description provided for @guideAddingHabitTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Adding a Habit'**
+  String get guideAddingHabitTitle;
+
+  /// No description provided for @guideAddingHabitBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the + button on the Today screen to create a new habit.\n\nYou will be asked to set:\n• Name — what the habit is called\n• Category — Health, Work, Personal, Finance, Learning, Social, or Other\n• Tracking type:\n  - Done/Not done — simple checkbox\n  - Count — log a number (e.g. glasses of water)\n  - Duration — log minutes\n• Mode:\n  - Ongoing — no end date, retire manually when done\n  - Goal-bound — set a target end date; auto-archives when reached\n• Daily reminder — optional notification time\n• Grace period — allows one missed day without breaking your streak\n• Colour — pick an accent colour for the habit card'**
+  String get guideAddingHabitBody;
+
+  /// No description provided for @guideCheckInTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking In'**
+  String get guideCheckInTitle;
+
+  /// No description provided for @guideCheckInBody.
+  ///
+  /// In en, this message translates to:
+  /// **'To log today\'s progress, tap the check button on a habit card or tap the card to open the check-in sheet.\n\n• For Done/Not done habits, tap once to mark complete\n• For Count habits, enter the amount and unit\n• For Duration habits, enter the number of minutes\n• Add an optional note — it will appear in your Journal\n\nYou can re-open the sheet to edit today\'s entry at any time.'**
+  String get guideCheckInBody;
+
+  /// No description provided for @guideStreaksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Streaks & Grace Period'**
+  String get guideStreaksTitle;
+
+  /// No description provided for @guideStreaksBody.
+  ///
+  /// In en, this message translates to:
+  /// **'A streak counts how many consecutive days you have completed a habit.\n\n• Your current streak is shown on each habit card with a 🔥 icon\n• If you miss today, your streak still counts from yesterday — checking in later today will not reset it\n• Grace Period: if enabled, you are allowed to miss one day without breaking your streak. The grace period can only be used once per streak run.\n• The longest streak you have ever achieved is shown on the habit detail screen'**
+  String get guideStreaksBody;
+
+  /// No description provided for @guidePauseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pausing a Habit'**
+  String get guidePauseTitle;
+
+  /// No description provided for @guidePauseBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Sometimes life gets in the way. You can pause a habit so it does not count against your streak.\n\nTo pause, tap ⋮ on a habit card and choose Pause habit. Then select how long:\n• Tomorrow\n• 3 days\n• 1 week\n• 2 weeks\n• Indefinitely\n\nPaused habits are shown with a ⏸ badge and reduced opacity. They resume automatically when the pause period ends, or you can resume them manually at any time via the ⋮ menu.'**
+  String get guidePauseBody;
+
+  /// No description provided for @guideIntentionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Intention'**
+  String get guideIntentionTitle;
+
+  /// No description provided for @guideIntentionBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The Daily Intention card sits at the top of the Today screen. Use it to set a short focus or goal for the day.\n\n• Tap the card to open the intention sheet\n• Type your intention and tap Save\n• Your intention is shown on the card for the rest of the day\n• Tap the card again to edit or clear it\n• The intention resets automatically each new day'**
+  String get guideIntentionBody;
+
+  /// No description provided for @guideDetailBadgesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Habit Detail & Badges'**
+  String get guideDetailBadgesTitle;
+
+  /// No description provided for @guideDetailBadgesBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap ⋮ on a habit card and choose View Details to open the habit detail screen.\n\nYou will see:\n• Stats — current streak, longest streak, total completions\n• Badges — 8 milestone badges earned from your progress:\n  🌱 First Step (1 completion)\n  🔥 Week Warrior (7-day streak)\n  ⚡ Fortnight (14-day streak)\n  💪 Monthly Master (30-day streak)\n  🏆 Century Streak (100-day streak)\n  👑 Year of Habit (365-day streak)\n  ⭐ Dedicated (50 completions)\n  🌟 Century Club (100 completions)\n• 5-week history calendar\n• Recent notes from your check-ins\n\nEarned badges are highlighted; unearned ones are greyed out. Tap any badge to see what is needed to earn it.'**
+  String get guideDetailBadgesBody;
+
+  /// No description provided for @guideStatsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stats & Journal'**
+  String get guideStatsTitle;
+
+  /// No description provided for @guideStatsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The Stats tab (bottom navigation, right) shows your overall activity.\n\n• Activity heatmap — 17 weeks of check-in data; today is highlighted and the view scrolls to the current week automatically. Tap any cell to see the count for that day.\n• This Week — bar chart of the last 7 days\n• Last 4 Weeks — bar chart of weekly completions\n• Summary cards — active habits, total check-ins this week, this month, and all time\n\nTap the 📖 icon in the Stats app bar to open the Journal, which shows all your check-in notes grouped by date.'**
+  String get guideStatsBody;
+
+  /// No description provided for @guideArchiveTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Archive'**
+  String get guideArchiveTitle;
+
+  /// No description provided for @guideArchiveBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The Archive tab (bottom navigation, left) is a record of completed and retired habits.\n\nHabits move to the Archive when:\n• A goal-bound habit reaches its target date\n• You manually retire an ongoing habit\n\nFrom the Archive you can:\n• Tap ⋮ on any habit → Restore to move it back to active habits\n• Tap ⋮ → Delete permanently to remove it forever (this cannot be undone)'**
+  String get guideArchiveBody;
+
+  /// No description provided for @guideSettingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get guideSettingsTitle;
+
+  /// No description provided for @guideSettingsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Access Settings by tapping the 🎛 icon in the Today screen app bar.\n\n• Language — switch between English and Bahasa Indonesia\n• Theme — choose Light, Dark, or follow the system setting\n• Biometric / PIN lock — when enabled, the app requires authentication every time it is opened. If your device does not support biometrics, this option will be disabled automatically.'**
+  String get guideSettingsBody;
+
   /// No description provided for @intentionTitle.
   ///
   /// In en, this message translates to:

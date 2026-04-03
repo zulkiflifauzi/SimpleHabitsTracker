@@ -10,6 +10,7 @@ A clean, minimal, and fully offline habit tracker for Android. Build better habi
 - **Goal-bound & ongoing modes** — Set a target end date or track indefinitely
 - **Streak tracking** — Current and longest streaks with grace period support
 - **Daily Intention** — Set a daily focus at the top of the Today screen; persists per day, resets each morning
+- **In-app User Guide** — 11 expandable sections covering every feature, accessible from Settings → Help
 - **Pause habit** — Pause for tomorrow, 3 days, 1 week, 2 weeks, or indefinitely; auto-resumes
 - **Archive** — Completed goal-bound habits and retired ongoing habits land here as a trophy room; restore or delete permanently via ⋮ menu
 - **Milestone badges** — 8 badges computed from streak and total completions, shown on the habit detail screen
@@ -131,6 +132,7 @@ lib/
 | v1.0 ✅ | ✅ Habit creation, ✅ streaks, ✅ notifications, ✅ categories, ✅ home widget, ✅ biometric lock, ✅ multilingual, ✅ onboarding |
 | v1.5 ✅ | ✅ Heatmap, ✅ weekly/monthly charts, ✅ journal, ✅ pause habit, ✅ habit detail screen, ✅ dark/light/system theme |
 | v2.0 ✅ | ✅ Milestone badges, ✅ Archive restore/delete, ✅ Daily Intention screen, ✅ per-habit accent color |
+| v2.1 ✅ | ✅ In-app User Guide (11 sections, bilingual EN + ID) |
 
 ---
 
