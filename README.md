@@ -28,7 +28,9 @@ A clean, minimal, and fully offline habit tracker for Android. Build better habi
 
 ## Screenshots
 
-> Coming soon.
+| Today | Add Habit | Archive |
+|:---:|:---:|:---:|
+| ![Today screen](store_assets/screenshots/01_home.png) | ![Add habit](store_assets/screenshots/02_add_habit.png) | ![Archive](store_assets/screenshots/03_archive.png) |
 
 ---
 
