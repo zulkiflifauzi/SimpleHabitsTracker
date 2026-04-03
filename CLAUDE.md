@@ -190,6 +190,6 @@ Streaks and check-ins work identically for both modes.
 
 - **v1.0** — Habit creation, Home/Today screen, notifications, categories, home screen widget, streak tracking, grace period, **biometric/PIN lock screen**, **multilanguage (English + Bahasa Indonesia)**, **onboarding (language + security setup)**, **Settings screen**
 - **v1.5** — Heatmap, weekly/monthly charts, journal notes, pause habit, habit detail screen, **dark/light/system theme toggle**
-- **v2.0** — ~~Milestone badges~~ ✓, ~~Archive restore/delete~~ ✓, ~~Daily Intention screen~~ ✓, ~~per-habit accent color~~ ✓ (shipped in v1.5), CSV/JSON export
+- **v2.0** — ~~Milestone badges~~ ✓, ~~Archive restore/delete~~ ✓, ~~Daily Intention screen~~ ✓, ~~per-habit accent color~~ ✓ (shipped in v1.5)
 
 **Out of scope:** social features, AI coaching, cloud sync, gamification points.
