@@ -1,0 +1,177 @@
+{
+  "@@locale": "id",
+
+  "appTitle": "Simple Habits Tracker",
+
+  "navToday": "Hari Ini",
+  "navArchive": "Arsip",
+  "navStats": "Statistik",
+
+  "today": "Hari Ini",
+  "todayDate": "Hari ini, {date}",
+  "@todayDate": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+
+  "noHabitsTitle": "Belum ada kebiasaan",
+  "noHabitsSubtitle": "Ketuk tombol + untuk membuat kebiasaan pertama Anda.",
+  "addHabit": "Tambah kebiasaan",
+
+  "newHabit": "Kebiasaan Baru",
+  "editHabit": "Edit Kebiasaan",
+  "save": "Simpan",
+  "cancel": "Batal",
+  "delete": "Hapus",
+  "next": "Lanjut",
+  "skip": "Lewati",
+  "getStarted": "Mulai",
+  "done": "Selesai",
+
+  "habitName": "Nama kebiasaan",
+  "habitNameHint": "mis. Lari 30 menit",
+  "habitNameRequired": "Nama wajib diisi",
+
+  "category": "Kategori",
+  "categoryHealth": "Kesehatan",
+  "categoryWork": "Pekerjaan",
+  "categoryPersonal": "Pribadi",
+  "categoryFinance": "Keuangan",
+  "categoryLearning": "Belajar",
+  "categorySocial": "Sosial",
+  "categoryOther": "Lainnya",
+
+  "howTrack": "Bagaimana Anda melacaknya?",
+  "trackDone": "Selesai / Tidak selesai",
+  "trackCount": "Hitungan",
+  "trackDuration": "Durasi",
+  "unit": "Satuan (opsional)",
+  "unitHint": "mis. gelas, km, halaman",
+
+  "mode": "Mode",
+  "modeOngoing": "Berkelanjutan",
+  "modeGoalBound": "Berbatas waktu",
+  "modeOngoingDesc": "Tanpa batas — hentikan secara manual saat selesai.",
+  "modeGoalBoundDesc": "Memiliki tanggal target akhir.",
+
+  "setTargetDate": "Tentukan tanggal target",
+  "targetDateLabel": "Target: {date}",
+  "@targetDateLabel": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+
+  "dailyReminder": "Pengingat harian",
+  "noReminder": "Tanpa pengingat",
+
+  "gracePeriod": "Masa tenggang",
+  "gracePeriodDesc": "Lewatkan satu hari tanpa menghentikan rentetan Anda.",
+
+  "color": "Warna",
+
+  "viewDetails": "Lihat detail",
+  "detailStats": "Statistik",
+  "detailHistory": "5 Minggu Terakhir",
+  "detailRecentNotes": "Catatan Terbaru",
+  "detailCurrentStreak": "Rentetan Saat Ini",
+  "detailLongestStreak": "Rentetan Terpanjang",
+  "detailTotal": "Sepanjang Waktu",
+  "detailThisMonth": "Bulan Ini",
+  "detailNoNotes": "Belum ada catatan untuk kebiasaan ini.",
+  "days": "{count, plural, =1{1 hari} other{{count} hari}}",
+  "@days": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "pauseHabit": "Jeda kebiasaan",
+  "resumeHabit": "Lanjutkan kebiasaan",
+  "paused": "Dijeda",
+  "pausedUntil": "Dijeda hingga {date}",
+  "@pausedUntil": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+  "pauseDuration": "Jeda berapa lama?",
+  "pauseTomorrow": "Besok",
+  "pause3Days": "3 hari",
+  "pause1Week": "1 minggu",
+  "pause2Weeks": "2 minggu",
+  "pauseIndefinitely": "Tanpa batas",
+
+  "archiveHabit": "Arsipkan kebiasaan",
+  "archiveHabitBody": "Kebiasaan ini akan dipindahkan ke Arsip. Anda bisa melihatnya kapan saja.",
+  "setTargetDateFirst": "Silakan tentukan tanggal target.",
+
+  "logForToday": "Catat untuk hari ini",
+  "noteOptional": "Catatan (opsional)",
+  "noteHint": "Bagaimana hasilnya?",
+  "markAsDone": "Tandai selesai",
+  "completedLabel": "Selesai!",
+  "invalidValue": "Masukkan nilai yang valid.",
+  "amount": "Jumlah",
+  "durationLabel": "Durasi",
+  "minutes": "menit",
+
+  "daysRemaining": "{days, plural, =0{Target tercapai hari ini!} =1{1 hari tersisa} other{{days} hari tersisa}}",
+  "@daysRemaining": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "noArchivedHabits": "Tidak ada kebiasaan yang diarsipkan",
+  "noArchivedHabitsSubtitle": "Kebiasaan berbatas waktu yang selesai dan kebiasaan berkelanjutan yang dihentikan akan muncul di sini.",
+  "completedOn": "Selesai {date}",
+  "@completedOn": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+
+  "statsComingSoon": "Statistik hadir di v1.5",
+  "statsComingSoonSubtitle": "Heatmap, ringkasan mingguan, dan grafik penyelesaian akan ada di sini.",
+
+  "journal": "Jurnal",
+  "journalEmpty": "Belum ada catatan",
+  "journalEmptySubtitle": "Tambahkan catatan saat check-in kebiasaan untuk memulai jurnal Anda.",
+
+  "statsActivity": "Aktivitas",
+  "statsSummary": "Ringkasan",
+  "statsThisWeek": "Minggu Ini",
+  "statsThisMonth": "Bulan Ini",
+  "statsAllTime": "Sepanjang Waktu",
+  "statsCheckIns": "{count} check-in",
+  "@statsCheckIns": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "statsActiveHabits": "Kebiasaan Aktif",
+  "statsNoActivity": "Belum ada aktivitas",
+  "statsNoActivitySubtitle": "Selesaikan kebiasaan untuk melihat perkembangan Anda di sini.",
+
+  "settings": "Pengaturan",
+  "language": "Bahasa",
+  "languageEnglish": "English",
+  "languageBahasa": "Bahasa Indonesia",
+
+  "appearance": "Tampilan",
+  "themeMode": "Tema",
+  "themeModeSystem": "Ikuti sistem",
+  "themeModeLight": "Terang",
+  "themeModeDark": "Gelap",
+
+  "security": "Keamanan",
+  "biometricLock": "Kunci biometrik / PIN",
+  "biometricLockDesc": "Memerlukan autentikasi saat membuka aplikasi.",
+  "biometricNotAvailable": "Autentikasi biometrik tidak tersedia di perangkat ini.",
+  "biometricEnableFirst": "Autentikasi gagal. Kunci tidak diaktifkan.",
+
+  "authenticateReason": "Autentikasi untuk membuka Simple Habits Tracker",
+  "unlock": "Buka Kunci",
+  "authFailed": "Autentikasi gagal. Silakan coba lagi.",
+
+  "welcomeTitle": "Selamat Datang di\nSimple Habits Tracker",
+  "welcomeSubtitle": "Bangun kebiasaan lebih baik, satu hari dalam satu waktu.",
+  "chooseLanguage": "Pilih bahasa Anda",
+  "chooseLanguageSubtitle": "Anda bisa mengubahnya nanti di Pengaturan.",
+  "setupSecurity": "Amankan aplikasi Anda",
+  "setupSecurityDesc": "Aktifkan kunci biometrik atau PIN untuk melindungi kebiasaan Anda. Anda bisa mengubahnya di Pengaturan.",
+  "enableLock": "Aktifkan kunci",
+
+  "disableAuthRecovery": "Bermasalah? Nonaktifkan autentikasi",
+  "disableAuthTitle": "Nonaktifkan autentikasi",
+  "disableAuthBody": "Ini akan mematikan layar kunci. Anda bisa mengaktifkannya kembali di Pengaturan.",
+  "disableAuthConfirm": "Nonaktifkan"
+}

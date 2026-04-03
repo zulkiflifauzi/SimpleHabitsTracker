@@ -1,0 +1,177 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Simple Habits Tracker",
+
+  "navToday": "Today",
+  "navArchive": "Archive",
+  "navStats": "Stats",
+
+  "today": "Today",
+  "todayDate": "Today, {date}",
+  "@todayDate": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+
+  "noHabitsTitle": "No habits yet",
+  "noHabitsSubtitle": "Tap the + button to create your first habit.",
+  "addHabit": "Add habit",
+
+  "newHabit": "New Habit",
+  "editHabit": "Edit Habit",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "next": "Next",
+  "skip": "Skip",
+  "getStarted": "Get started",
+  "done": "Done",
+
+  "habitName": "Habit name",
+  "habitNameHint": "e.g. Run 30 minutes",
+  "habitNameRequired": "Name is required",
+
+  "category": "Category",
+  "categoryHealth": "Health",
+  "categoryWork": "Work",
+  "categoryPersonal": "Personal",
+  "categoryFinance": "Finance",
+  "categoryLearning": "Learning",
+  "categorySocial": "Social",
+  "categoryOther": "Other",
+
+  "howTrack": "How do you track it?",
+  "trackDone": "Done / Not done",
+  "trackCount": "Count",
+  "trackDuration": "Duration",
+  "unit": "Unit (optional)",
+  "unitHint": "e.g. glasses, km, pages",
+
+  "mode": "Mode",
+  "modeOngoing": "Ongoing",
+  "modeGoalBound": "Goal-bound",
+  "modeOngoingDesc": "Open-ended — retire manually when done.",
+  "modeGoalBoundDesc": "Has a target end date.",
+
+  "setTargetDate": "Set target date",
+  "targetDateLabel": "Target: {date}",
+  "@targetDateLabel": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+
+  "dailyReminder": "Daily reminder",
+  "noReminder": "No reminder",
+
+  "gracePeriod": "Grace period",
+  "gracePeriodDesc": "Miss one day without breaking your streak.",
+
+  "color": "Color",
+
+  "viewDetails": "View details",
+  "detailStats": "Stats",
+  "detailHistory": "Last 5 Weeks",
+  "detailRecentNotes": "Recent Notes",
+  "detailCurrentStreak": "Current Streak",
+  "detailLongestStreak": "Longest Streak",
+  "detailTotal": "All Time",
+  "detailThisMonth": "This Month",
+  "detailNoNotes": "No notes for this habit yet.",
+  "days": "{count, plural, =1{1 day} other{{count} days}}",
+  "@days": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "pauseHabit": "Pause habit",
+  "resumeHabit": "Resume habit",
+  "paused": "Paused",
+  "pausedUntil": "Paused until {date}",
+  "@pausedUntil": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+  "pauseDuration": "Pause for how long?",
+  "pauseTomorrow": "Tomorrow",
+  "pause3Days": "3 days",
+  "pause1Week": "1 week",
+  "pause2Weeks": "2 weeks",
+  "pauseIndefinitely": "Indefinitely",
+
+  "archiveHabit": "Archive habit",
+  "archiveHabitBody": "This habit will be moved to the Archive. You can view it there any time.",
+  "setTargetDateFirst": "Please set a target date.",
+
+  "logForToday": "Log for today",
+  "noteOptional": "Note (optional)",
+  "noteHint": "How did it go?",
+  "markAsDone": "Mark as done",
+  "completedLabel": "Completed!",
+  "invalidValue": "Please enter a valid value.",
+  "amount": "Amount",
+  "durationLabel": "Duration",
+  "minutes": "minutes",
+
+  "daysRemaining": "{days, plural, =0{Target reached today!} =1{1 day remaining} other{{days} days remaining}}",
+  "@daysRemaining": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "noArchivedHabits": "No archived habits",
+  "noArchivedHabitsSubtitle": "Completed goal-bound habits and retired ongoing habits will appear here.",
+  "completedOn": "Completed {date}",
+  "@completedOn": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+
+  "statsComingSoon": "Stats coming in v1.5",
+  "statsComingSoonSubtitle": "Heatmaps, weekly summaries, and completion charts will be here.",
+
+  "journal": "Journal",
+  "journalEmpty": "No notes yet",
+  "journalEmptySubtitle": "Add a note when checking in a habit to start your journal.",
+
+  "statsActivity": "Activity",
+  "statsSummary": "Summary",
+  "statsThisWeek": "This Week",
+  "statsThisMonth": "This Month",
+  "statsAllTime": "All Time",
+  "statsCheckIns": "{count} check-ins",
+  "@statsCheckIns": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "statsActiveHabits": "Active Habits",
+  "statsNoActivity": "No activity yet",
+  "statsNoActivitySubtitle": "Complete habits to see your progress here.",
+
+  "settings": "Settings",
+  "language": "Language",
+  "languageEnglish": "English",
+  "languageBahasa": "Bahasa Indonesia",
+
+  "appearance": "Appearance",
+  "themeMode": "Theme",
+  "themeModeSystem": "System default",
+  "themeModeLight": "Light",
+  "themeModeDark": "Dark",
+
+  "security": "Security",
+  "biometricLock": "Biometric / PIN lock",
+  "biometricLockDesc": "Require authentication when opening the app.",
+  "biometricNotAvailable": "Biometric authentication is not available on this device.",
+  "biometricEnableFirst": "Authentication failed. Lock not enabled.",
+
+  "authenticateReason": "Authenticate to unlock Simple Habits Tracker",
+  "unlock": "Unlock",
+  "authFailed": "Authentication failed. Please try again.",
+
+  "welcomeTitle": "Welcome to\nSimple Habits Tracker",
+  "welcomeSubtitle": "Build better habits, one day at a time.",
+  "chooseLanguage": "Choose your language",
+  "chooseLanguageSubtitle": "You can change this later in Settings.",
+  "setupSecurity": "Secure your app",
+  "setupSecurityDesc": "Enable biometric or PIN lock to protect your habits. You can change this in Settings.",
+  "enableLock": "Enable lock",
+
+  "disableAuthRecovery": "Having trouble? Disable authentication",
+  "disableAuthTitle": "Disable authentication",
+  "disableAuthBody": "This will turn off the lock screen. You can re-enable it in Settings.",
+  "disableAuthConfirm": "Disable"
+}
