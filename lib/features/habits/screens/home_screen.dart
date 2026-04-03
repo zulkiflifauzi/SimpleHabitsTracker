@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import '../../../core/extensions/context_extensions.dart';
 import '../../../shared/widgets/empty_state.dart';
 import '../../add_edit_habit/screens/add_edit_habit_sheet.dart';
+import '../../daily_intention/widgets/daily_intention_card.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../providers/habits_provider.dart';
 import '../widgets/category_section.dart';
@@ -48,15 +49,22 @@ class HomeScreen extends ConsumerWidget {
       body: habitsAsync.when(
         data: (habits) {
           if (habits.isEmpty) {
-            return EmptyState(
-              icon: Icons.add_task_rounded,
-              title: context.l10n.noHabitsTitle,
-              subtitle: context.l10n.noHabitsSubtitle,
-              action: FilledButton.icon(
-                onPressed: () => _openAddHabit(context),
-                icon: const Icon(Icons.add),
-                label: Text(context.l10n.addHabit),
-              ),
+            return Column(
+              children: [
+                const DailyIntentionCard(),
+                Expanded(
+                  child: EmptyState(
+                    icon: Icons.add_task_rounded,
+                    title: context.l10n.noHabitsTitle,
+                    subtitle: context.l10n.noHabitsSubtitle,
+                    action: FilledButton.icon(
+                      onPressed: () => _openAddHabit(context),
+                      icon: const Icon(Icons.add),
+                      label: Text(context.l10n.addHabit),
+                    ),
+                  ),
+                ),
+              ],
             );
           }
 
@@ -70,9 +78,10 @@ class HomeScreen extends ConsumerWidget {
 
           return ListView.builder(
             padding: const EdgeInsets.only(bottom: 96),
-            itemCount: categories.length,
+            itemCount: categories.length + 1,
             itemBuilder: (context, i) {
-              final category = categories[i];
+              if (i == 0) return const DailyIntentionCard();
+              final category = categories[i - 1];
               return CategorySection(
                 category: category,
                 habits: grouped[category]!,

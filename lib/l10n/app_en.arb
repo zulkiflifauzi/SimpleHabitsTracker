@@ -175,6 +175,13 @@
   "disableAuthBody": "This will turn off the lock screen. You can re-enable it in Settings.",
   "disableAuthConfirm": "Disable",
 
+  "intentionTitle": "Today's Intention",
+  "intentionHint": "What do you want to focus on today?",
+  "intentionPlaceholder": "Set your intention for today…",
+  "intentionSave": "Save",
+  "intentionClear": "Clear",
+  "intentionEmpty": "No intention set",
+
   "detailBadges": "Badges",
   "badgeFirstStep": "First Step",
   "badgeFirstStepDesc": "Complete your first check-in",

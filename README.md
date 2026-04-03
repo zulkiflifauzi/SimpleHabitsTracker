@@ -9,8 +9,10 @@ A clean, minimal, and fully offline habit tracker for Android. Build better habi
 - **Habit creation** — Boolean (done/not done), numeric (count), or duration (minutes) tracking
 - **Goal-bound & ongoing modes** — Set a target end date or track indefinitely
 - **Streak tracking** — Current and longest streaks with grace period support
+- **Daily Intention** — Set a daily focus at the top of the Today screen; persists per day, resets each morning
 - **Pause habit** — Pause for tomorrow, 3 days, 1 week, 2 weeks, or indefinitely; auto-resumes
-- **Archive** — Completed goal-bound habits and retired ongoing habits land here as a trophy room
+- **Archive** — Completed goal-bound habits and retired ongoing habits land here as a trophy room; restore or delete permanently via ⋮ menu
+- **Milestone badges** — 8 badges computed from streak and total completions, shown on the habit detail screen
 - **GitHub-style heatmap** — 17-week activity grid on the Stats tab, auto-scrolls to today
 - **Weekly & monthly bar charts** — Last 7 days and last 4 weeks completion overview
 - **Journal** — Optional per-check-in notes, browsable chronologically
@@ -126,9 +128,9 @@ lib/
 
 | Version | Highlights |
 |---|---|
-| v1.0 | Habit creation, streaks, notifications, categories, home widget, biometric lock, multilingual, onboarding |
-| v1.5 | Heatmap, weekly/monthly charts, journal, pause habit, habit detail screen, dark/light/system theme |
-| v2.0 | Milestone badges, Archive screen, Daily Intention screen, per-habit accent color, CSV/JSON export |
+| v1.0 ✅ | ✅ Habit creation, ✅ streaks, ✅ notifications, ✅ categories, ✅ home widget, ✅ biometric lock, ✅ multilingual, ✅ onboarding |
+| v1.5 ✅ | ✅ Heatmap, ✅ weekly/monthly charts, ✅ journal, ✅ pause habit, ✅ habit detail screen, ✅ dark/light/system theme |
+| v2.0 | ✅ Milestone badges, ✅ Archive restore/delete, ✅ Daily Intention screen, ✅ per-habit accent color, CSV/JSON export (pending) |
 
 ---
 

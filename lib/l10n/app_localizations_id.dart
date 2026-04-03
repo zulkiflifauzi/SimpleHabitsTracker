@@ -427,6 +427,24 @@ class AppLocalizationsId extends AppLocalizations {
   String get disableAuthConfirm => 'Nonaktifkan';
 
   @override
+  String get intentionTitle => 'Niat Hari Ini';
+
+  @override
+  String get intentionHint => 'Apa yang ingin Anda fokuskan hari ini?';
+
+  @override
+  String get intentionPlaceholder => 'Tetapkan niat Anda untuk hari ini…';
+
+  @override
+  String get intentionSave => 'Simpan';
+
+  @override
+  String get intentionClear => 'Hapus';
+
+  @override
+  String get intentionEmpty => 'Belum ada niat';
+
+  @override
   String get detailBadges => 'Lencana';
 
   @override
