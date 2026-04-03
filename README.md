@@ -28,9 +28,17 @@ A clean, minimal, and fully offline habit tracker for Android. Build better habi
 
 ## Screenshots
 
-| Today | Add Habit | Archive |
+| Today | Habit Detail | Stats |
 |:---:|:---:|:---:|
-| ![Today screen](store_assets/screenshots/01_home.png) | ![Add habit](store_assets/screenshots/02_add_habit.png) | ![Archive](store_assets/screenshots/03_archive.png) |
+| ![Today](store_assets/screenshots/Today.jpg) | ![Habit Detail](store_assets/screenshots/Habit_detail.jpg) | ![Stats](store_assets/screenshots/Stats.jpg) |
+
+| Stats Summary | Archive | Settings |
+|:---:|:---:|:---:|
+| ![Stats Summary](store_assets/screenshots/Stats_2.jpg) | ![Archive](store_assets/screenshots/Archive.jpg) | ![Settings](store_assets/screenshots/Settings.jpg) |
+
+| User Guide |
+|:---:|
+| ![User Guide](store_assets/screenshots/User%20Guide.jpg) |
 
 ---
 
