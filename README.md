@@ -128,8 +128,8 @@ lib/
 
 | Version | Highlights |
 |---|---|
-| v1.0 | Habit creation, streaks, notifications, categories, home widget, biometric lock, multilingual, onboarding |
-| v1.5 | Heatmap, weekly/monthly charts, journal, pause habit, habit detail screen, dark/light/system theme |
+| v1.0 ✅ | ✅ Habit creation, ✅ streaks, ✅ notifications, ✅ categories, ✅ home widget, ✅ biometric lock, ✅ multilingual, ✅ onboarding |
+| v1.5 ✅ | ✅ Heatmap, ✅ weekly/monthly charts, ✅ journal, ✅ pause habit, ✅ habit detail screen, ✅ dark/light/system theme |
 | v2.0 | ✅ Milestone badges, ✅ Archive restore/delete, ✅ Daily Intention screen, ✅ per-habit accent color, CSV/JSON export (pending) |
 
 ---
