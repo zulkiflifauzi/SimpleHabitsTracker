@@ -425,4 +425,20 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get disableAuthConfirm => 'Nonaktifkan';
+
+  @override
+  String get restoreHabit => 'Pulihkan kebiasaan';
+
+  @override
+  String get deletePermanently => 'Hapus permanen';
+
+  @override
+  String deleteHabitConfirm(String name) {
+    return 'Hapus \"$name\" secara permanen? Tindakan ini tidak dapat dibatalkan.';
+  }
+
+  @override
+  String habitRestored(String name) {
+    return '\"$name\" dipulihkan ke kebiasaan aktif.';
+  }
 }

@@ -173,5 +173,16 @@
   "disableAuthRecovery": "Bermasalah? Nonaktifkan autentikasi",
   "disableAuthTitle": "Nonaktifkan autentikasi",
   "disableAuthBody": "Ini akan mematikan layar kunci. Anda bisa mengaktifkannya kembali di Pengaturan.",
-  "disableAuthConfirm": "Nonaktifkan"
+  "disableAuthConfirm": "Nonaktifkan",
+
+  "restoreHabit": "Pulihkan kebiasaan",
+  "deletePermanently": "Hapus permanen",
+  "deleteHabitConfirm": "Hapus \"{name}\" secara permanen? Tindakan ini tidak dapat dibatalkan.",
+  "@deleteHabitConfirm": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+  "habitRestored": "\"{name}\" dipulihkan ke kebiasaan aktif.",
+  "@habitRestored": {
+    "placeholders": { "name": { "type": "String" } }
+  }
 }

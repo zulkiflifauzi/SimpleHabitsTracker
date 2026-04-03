@@ -173,5 +173,16 @@
   "disableAuthRecovery": "Having trouble? Disable authentication",
   "disableAuthTitle": "Disable authentication",
   "disableAuthBody": "This will turn off the lock screen. You can re-enable it in Settings.",
-  "disableAuthConfirm": "Disable"
+  "disableAuthConfirm": "Disable",
+
+  "restoreHabit": "Restore habit",
+  "deletePermanently": "Delete permanently",
+  "deleteHabitConfirm": "Delete \"{name}\" permanently? This cannot be undone.",
+  "@deleteHabitConfirm": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+  "habitRestored": "\"{name}\" restored to active habits.",
+  "@habitRestored": {
+    "placeholders": { "name": { "type": "String" } }
+  }
 }
