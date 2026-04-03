@@ -847,6 +847,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Disable'**
   String get disableAuthConfirm;
+
+  /// No description provided for @restoreHabit.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore habit'**
+  String get restoreHabit;
+
+  /// No description provided for @deletePermanently.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete permanently'**
+  String get deletePermanently;
+
+  /// No description provided for @deleteHabitConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete \"{name}\" permanently? This cannot be undone.'**
+  String deleteHabitConfirm(String name);
+
+  /// No description provided for @habitRestored.
+  ///
+  /// In en, this message translates to:
+  /// **'\"{name}\" restored to active habits.'**
+  String habitRestored(String name);
 }
 
 class _AppLocalizationsDelegate

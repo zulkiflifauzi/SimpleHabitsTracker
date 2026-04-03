@@ -419,4 +419,20 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get disableAuthConfirm => 'Disable';
+
+  @override
+  String get restoreHabit => 'Restore habit';
+
+  @override
+  String get deletePermanently => 'Delete permanently';
+
+  @override
+  String deleteHabitConfirm(String name) {
+    return 'Delete \"$name\" permanently? This cannot be undone.';
+  }
+
+  @override
+  String habitRestored(String name) {
+    return '\"$name\" restored to active habits.';
+  }
 }
