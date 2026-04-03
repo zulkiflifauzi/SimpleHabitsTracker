@@ -421,6 +421,57 @@ class AppLocalizationsEn extends AppLocalizations {
   String get disableAuthConfirm => 'Disable';
 
   @override
+  String get detailBadges => 'Badges';
+
+  @override
+  String get badgeFirstStep => 'First Step';
+
+  @override
+  String get badgeFirstStepDesc => 'Complete your first check-in';
+
+  @override
+  String get badgeWeekWarrior => 'Week Warrior';
+
+  @override
+  String get badgeWeekWarriorDesc => 'Reach a 7-day streak';
+
+  @override
+  String get badgeFortnight => 'Fortnight';
+
+  @override
+  String get badgeFortnightDesc => 'Reach a 14-day streak';
+
+  @override
+  String get badgeMonthlyMaster => 'Monthly Master';
+
+  @override
+  String get badgeMonthlyMasterDesc => 'Reach a 30-day streak';
+
+  @override
+  String get badgeCenturyStreak => 'Century Streak';
+
+  @override
+  String get badgeCenturyStreakDesc => 'Reach a 100-day streak';
+
+  @override
+  String get badgeYearOfHabit => 'Year of Habit';
+
+  @override
+  String get badgeYearOfHabitDesc => 'Reach a 365-day streak';
+
+  @override
+  String get badgeDedicated => 'Dedicated';
+
+  @override
+  String get badgeDedicatedDesc => 'Complete 50 check-ins';
+
+  @override
+  String get badgeCenturyClub => 'Century Club';
+
+  @override
+  String get badgeCenturyClubDesc => 'Complete 100 check-ins';
+
+  @override
   String get restoreHabit => 'Restore habit';
 
   @override

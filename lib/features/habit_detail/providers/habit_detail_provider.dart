@@ -2,6 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/database/app_database.dart';
 import '../../../features/habits/providers/habits_provider.dart';
+import '../../../shared/models/habit_badge.dart';
+import '../../../shared/utils/badge_calculator.dart';
 import '../../../shared/utils/streak_calculator.dart';
 
 class HabitDetailStats {
@@ -52,6 +54,14 @@ final habitHistoryProvider = Provider.autoDispose
       map[day] = ci.completed;
     }
     return map;
+  });
+});
+
+/// Computed milestone badges for a single habit.
+final habitBadgesProvider = Provider.autoDispose
+    .family<AsyncValue<List<HabitBadge>>, Habit>((ref, habit) {
+  return ref.watch(habitDetailStatsProvider(habit)).whenData((stats) {
+    return BadgeCalculator.compute(stats.longestStreak, stats.totalCompletions);
   });
 });
 

@@ -4,6 +4,8 @@ import 'package:intl/intl.dart';
 
 import '../../../core/database/app_database.dart';
 import '../../../core/extensions/context_extensions.dart';
+import '../../../l10n/app_localizations.dart';
+import '../../../shared/models/habit_badge.dart';
 import '../../checkin/widgets/checkin_sheet.dart';
 import '../../habits/providers/habits_provider.dart';
 import '../../habits/widgets/habit_card.dart';
@@ -26,6 +28,7 @@ class HabitDetailScreen extends ConsumerWidget {
     final statsAsync = ref.watch(habitDetailStatsProvider(habit));
     final historyAsync = ref.watch(habitHistoryProvider(habit));
     final notesAsync = ref.watch(habitNotesProvider(habit));
+    final badgesAsync = ref.watch(habitBadgesProvider(habit));
 
     // Watch today's check-in for the FAB state
     final habitsAsync = ref.watch(habitsWithStatusProvider);
@@ -132,6 +135,19 @@ class HabitDetailScreen extends ConsumerWidget {
                   ),
                   loading: () => const SizedBox(
                       height: 80,
+                      child: Center(child: CircularProgressIndicator())),
+                  error: (e, _) => Text('Error: $e'),
+                ),
+
+                const SizedBox(height: 24),
+
+                // ── Badges ────────────────────────────────────────────
+                _SectionHeader(l10n.detailBadges),
+                const SizedBox(height: 12),
+                badgesAsync.when(
+                  data: (badges) => _BadgesGrid(badges: badges),
+                  loading: () => const SizedBox(
+                      height: 60,
                       child: Center(child: CircularProgressIndicator())),
                   error: (e, _) => Text('Error: $e'),
                 ),
@@ -269,6 +285,103 @@ class _StatCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+// Returns (label, description) for a badge type using l10n.
+(String, String) _badgeStrings(AppLocalizations l10n, BadgeType type) {
+  switch (type) {
+    case BadgeType.firstStep:
+      return (l10n.badgeFirstStep, l10n.badgeFirstStepDesc);
+    case BadgeType.weekWarrior:
+      return (l10n.badgeWeekWarrior, l10n.badgeWeekWarriorDesc);
+    case BadgeType.fortnight:
+      return (l10n.badgeFortnight, l10n.badgeFortnightDesc);
+    case BadgeType.monthlyMaster:
+      return (l10n.badgeMonthlyMaster, l10n.badgeMonthlyMasterDesc);
+    case BadgeType.centuryStreak:
+      return (l10n.badgeCenturyStreak, l10n.badgeCenturyStreakDesc);
+    case BadgeType.yearOfHabit:
+      return (l10n.badgeYearOfHabit, l10n.badgeYearOfHabitDesc);
+    case BadgeType.dedicated:
+      return (l10n.badgeDedicated, l10n.badgeDedicatedDesc);
+    case BadgeType.centuryClub:
+      return (l10n.badgeCenturyClub, l10n.badgeCenturyClubDesc);
+  }
+}
+
+class _BadgesGrid extends StatelessWidget {
+  const _BadgesGrid({required this.badges});
+
+  final List<HabitBadge> badges;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    final scheme = Theme.of(context).colorScheme;
+
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: badges.map((badge) {
+        final (label, desc) = _badgeStrings(l10n, badge.type);
+        return Tooltip(
+          message: desc,
+          child: AnimatedOpacity(
+            duration: const Duration(milliseconds: 300),
+            opacity: badge.earned ? 1.0 : 0.3,
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () {
+                ScaffoldMessenger.of(context)
+                  ..clearSnackBars()
+                  ..showSnackBar(SnackBar(
+                    content: Text(
+                      badge.earned
+                          ? '${badge.emoji} $label — $desc'
+                          : '🔒 $label — $desc',
+                    ),
+                    behavior: SnackBarBehavior.floating,
+                    width: 300,
+                    duration: const Duration(seconds: 2),
+                  ));
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(
+                  color: badge.earned
+                      ? scheme.primaryContainer
+                      : scheme.surfaceContainerHighest,
+                  borderRadius: BorderRadius.circular(12),
+                  border: badge.earned
+                      ? Border.all(
+                          color: scheme.primary.withValues(alpha: 0.4),
+                          width: 1,
+                        )
+                      : null,
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(badge.emoji, style: const TextStyle(fontSize: 18)),
+                    const SizedBox(width: 6),
+                    Text(
+                      label,
+                      style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                            fontWeight: FontWeight.w600,
+                            color: badge.earned
+                                ? scheme.onPrimaryContainer
+                                : scheme.onSurfaceVariant,
+                          ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      }).toList(),
     );
   }
 }

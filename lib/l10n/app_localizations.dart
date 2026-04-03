@@ -848,6 +848,108 @@ abstract class AppLocalizations {
   /// **'Disable'**
   String get disableAuthConfirm;
 
+  /// No description provided for @detailBadges.
+  ///
+  /// In en, this message translates to:
+  /// **'Badges'**
+  String get detailBadges;
+
+  /// No description provided for @badgeFirstStep.
+  ///
+  /// In en, this message translates to:
+  /// **'First Step'**
+  String get badgeFirstStep;
+
+  /// No description provided for @badgeFirstStepDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your first check-in'**
+  String get badgeFirstStepDesc;
+
+  /// No description provided for @badgeWeekWarrior.
+  ///
+  /// In en, this message translates to:
+  /// **'Week Warrior'**
+  String get badgeWeekWarrior;
+
+  /// No description provided for @badgeWeekWarriorDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Reach a 7-day streak'**
+  String get badgeWeekWarriorDesc;
+
+  /// No description provided for @badgeFortnight.
+  ///
+  /// In en, this message translates to:
+  /// **'Fortnight'**
+  String get badgeFortnight;
+
+  /// No description provided for @badgeFortnightDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Reach a 14-day streak'**
+  String get badgeFortnightDesc;
+
+  /// No description provided for @badgeMonthlyMaster.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly Master'**
+  String get badgeMonthlyMaster;
+
+  /// No description provided for @badgeMonthlyMasterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Reach a 30-day streak'**
+  String get badgeMonthlyMasterDesc;
+
+  /// No description provided for @badgeCenturyStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'Century Streak'**
+  String get badgeCenturyStreak;
+
+  /// No description provided for @badgeCenturyStreakDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Reach a 100-day streak'**
+  String get badgeCenturyStreakDesc;
+
+  /// No description provided for @badgeYearOfHabit.
+  ///
+  /// In en, this message translates to:
+  /// **'Year of Habit'**
+  String get badgeYearOfHabit;
+
+  /// No description provided for @badgeYearOfHabitDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Reach a 365-day streak'**
+  String get badgeYearOfHabitDesc;
+
+  /// No description provided for @badgeDedicated.
+  ///
+  /// In en, this message translates to:
+  /// **'Dedicated'**
+  String get badgeDedicated;
+
+  /// No description provided for @badgeDedicatedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 50 check-ins'**
+  String get badgeDedicatedDesc;
+
+  /// No description provided for @badgeCenturyClub.
+  ///
+  /// In en, this message translates to:
+  /// **'Century Club'**
+  String get badgeCenturyClub;
+
+  /// No description provided for @badgeCenturyClubDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 100 check-ins'**
+  String get badgeCenturyClubDesc;
+
   /// No description provided for @restoreHabit.
   ///
   /// In en, this message translates to:
