@@ -427,6 +427,57 @@ class AppLocalizationsId extends AppLocalizations {
   String get disableAuthConfirm => 'Nonaktifkan';
 
   @override
+  String get detailBadges => 'Lencana';
+
+  @override
+  String get badgeFirstStep => 'Langkah Pertama';
+
+  @override
+  String get badgeFirstStepDesc => 'Selesaikan check-in pertama Anda';
+
+  @override
+  String get badgeWeekWarrior => 'Pejuang Mingguan';
+
+  @override
+  String get badgeWeekWarriorDesc => 'Capai rentetan 7 hari';
+
+  @override
+  String get badgeFortnight => 'Dua Minggu';
+
+  @override
+  String get badgeFortnightDesc => 'Capai rentetan 14 hari';
+
+  @override
+  String get badgeMonthlyMaster => 'Master Bulanan';
+
+  @override
+  String get badgeMonthlyMasterDesc => 'Capai rentetan 30 hari';
+
+  @override
+  String get badgeCenturyStreak => 'Rentetan Seabad';
+
+  @override
+  String get badgeCenturyStreakDesc => 'Capai rentetan 100 hari';
+
+  @override
+  String get badgeYearOfHabit => 'Setahun Berkebiasaan';
+
+  @override
+  String get badgeYearOfHabitDesc => 'Capai rentetan 365 hari';
+
+  @override
+  String get badgeDedicated => 'Berdedikasi';
+
+  @override
+  String get badgeDedicatedDesc => 'Selesaikan 50 check-in';
+
+  @override
+  String get badgeCenturyClub => 'Klub Seabad';
+
+  @override
+  String get badgeCenturyClubDesc => 'Selesaikan 100 check-in';
+
+  @override
   String get restoreHabit => 'Pulihkan kebiasaan';
 
   @override
