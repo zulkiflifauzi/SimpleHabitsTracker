@@ -419,8 +419,12 @@ class _AddEditHabitSheetState extends ConsumerState<AddEditHabitSheet> {
           .read(databaseProvider)
           .habitsDao
           .archiveHabit(widget.existingHabit!.id);
-      await NotificationService.instance
-          .cancelHabitReminder(widget.existingHabit!.id);
+      try {
+        await NotificationService.instance
+            .cancelHabitReminder(widget.existingHabit!.id);
+      } catch (_) {
+        // Notification cancellation is best-effort; don't block the archive flow.
+      }
       if (mounted) Navigator.of(context).pop();
     }
   }

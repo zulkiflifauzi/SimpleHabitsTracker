@@ -195,5 +195,6 @@ Streaks and check-ins work identically for both modes.
 - **v2.0** — ~~Milestone badges~~ ✓, ~~Archive restore/delete~~ ✓, ~~Daily Intention screen~~ ✓, ~~per-habit accent color~~ ✓ (shipped in v1.5)
 - **v2.1** — ~~In-app User Guide~~ ✓
 - **v2.1.1** — ~~New Habit modal not closing after save (notification exception swallowed Navigator.pop)~~ ✓, ~~app version showing 1.0.0 in device info~~ ✓ (pubspec was never updated)
+- **v2.1.2** — ~~Archive modal not closing after confirm (same root cause as v2.1.1 — cancelHabitReminder exception swallowed Navigator.pop in _archiveHabit)~~ ✓
 
 **Out of scope:** social features, AI coaching, cloud sync, gamification points.

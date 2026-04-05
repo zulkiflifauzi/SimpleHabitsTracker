@@ -144,6 +144,7 @@ lib/
 | v2.0 ✅ | ✅ Milestone badges, ✅ Archive restore/delete, ✅ Daily Intention screen, ✅ per-habit accent color |
 | v2.1 ✅ | ✅ In-app User Guide (11 sections, bilingual EN + ID) |
 | v2.1.1 ✅ | ✅ Fix: New Habit modal not closing after save, ✅ Fix: app version showing 1.0.0 in device info |
+| v2.1.2 ✅ | ✅ Fix: Archive modal not closing after confirm |
 
 ---
 
