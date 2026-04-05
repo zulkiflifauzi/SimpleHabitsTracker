@@ -194,5 +194,6 @@ Streaks and check-ins work identically for both modes.
 - **v1.5** — Heatmap, weekly/monthly charts, journal notes, pause habit, habit detail screen, **dark/light/system theme toggle**
 - **v2.0** — ~~Milestone badges~~ ✓, ~~Archive restore/delete~~ ✓, ~~Daily Intention screen~~ ✓, ~~per-habit accent color~~ ✓ (shipped in v1.5)
 - **v2.1** — ~~In-app User Guide~~ ✓
+- **v2.1.1** — ~~New Habit modal not closing after save (notification exception swallowed Navigator.pop)~~ ✓, ~~app version showing 1.0.0 in device info~~ ✓ (pubspec was never updated)
 
 **Out of scope:** social features, AI coaching, cloud sync, gamification points.

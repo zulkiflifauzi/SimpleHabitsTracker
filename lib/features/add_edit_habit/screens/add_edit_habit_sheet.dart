@@ -379,14 +379,18 @@ class _AddEditHabitSheetState extends ConsumerState<AddEditHabitSheet> {
       habitId = await db.habitsDao.insertHabit(entry);
     }
 
-    if (reminderStr != null) {
-      await NotificationService.instance.scheduleHabitReminder(
-        habitId: habitId,
-        habitName: _nameCtrl.text.trim(),
-        timeHHmm: reminderStr,
-      );
-    } else {
-      await NotificationService.instance.cancelHabitReminder(habitId);
+    try {
+      if (reminderStr != null) {
+        await NotificationService.instance.scheduleHabitReminder(
+          habitId: habitId,
+          habitName: _nameCtrl.text.trim(),
+          timeHHmm: reminderStr,
+        );
+      } else {
+        await NotificationService.instance.cancelHabitReminder(habitId);
+      }
+    } catch (_) {
+      // Notification scheduling is best-effort; don't block the save flow.
     }
 
     if (mounted) Navigator.of(context).pop();
