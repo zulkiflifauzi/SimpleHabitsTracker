@@ -49,7 +49,7 @@ flutter gen-l10n
 | Framework | Flutter (Dart) |
 | Database | Drift (type-safe SQLite, EF Core-like API with streams) |
 | State management | Riverpod (manual providers, no code gen) |
-| Notifications | flutter_local_notifications |
+| Notifications | flutter_local_notifications + flutter_timezone |
 | Auth | local_auth (biometrics / device PIN) |
 | Persistence | shared_preferences (settings, onboarding state, daily intentions) |
 | Localisation | flutter_localizations + ARB files (EN + ID) |
@@ -116,7 +116,7 @@ lib/l10n/                  # ARB files + generated AppLocalizations
 
 **Localisation** — `context.l10n` shorthand via `ContextX` extension. ARB files in `lib/l10n/`. Run `flutter gen-l10n` after any ARB change. Import: `import '../../l10n/app_localizations.dart'` (relative, not `flutter_gen` package).
 
-**Notifications** — `NotificationService` in `core/notifications/` handles per-habit daily scheduling via `flutter_local_notifications`. Fully offline, no internet required.
+**Notifications** — `NotificationService` in `core/notifications/` handles per-habit daily scheduling via `flutter_local_notifications`. `flutter_timezone` is used in `main()` to resolve the device's local timezone via `FlutterTimezone.getLocalTimezone()` and pass it to `tz.setLocalLocation()` — without this, `tz.local` defaults to UTC and reminders fire at the wrong time. Fully offline, no internet required.
 
 **Daily Intention** — One intention string per day, stored in SharedPreferences as a JSON map keyed by `"YYYY-MM-DD"`. `dailyIntentionProvider` (a `Notifier<String?>`) reads/writes it synchronously. Displayed as a card at the top of the Today screen; tapping opens `IntentionSheet` (bottom sheet). No Drift table — SharedPreferences is the right fit for one value per day. Note: adding a new Drift table requires `dart run build_runner build --delete-conflicting-outputs`; drift_dev 2.32.1 has a bug parsing new table files that doesn't affect existing cached tables.
 
@@ -196,5 +196,6 @@ Streaks and check-ins work identically for both modes.
 - **v2.1** — ~~In-app User Guide~~ ✓
 - **v2.1.1** — ~~New Habit modal not closing after save (notification exception swallowed Navigator.pop)~~ ✓, ~~app version showing 1.0.0 in device info~~ ✓ (pubspec was never updated)
 - **v2.1.2** — ~~Archive modal not closing after confirm (same root cause as v2.1.1 — cancelHabitReminder exception swallowed Navigator.pop in _archiveHabit)~~ ✓
+- **v2.1.3** — ~~Notifications firing at wrong time (tz.local defaulted to UTC — fixed by adding flutter_timezone and calling tz.setLocalLocation in main())~~ ✓, ~~Scheduled notifications not firing when app closed (missing ScheduledNotificationReceiver + ScheduledNotificationBootReceiver in AndroidManifest)~~ ✓
 
 **Out of scope:** social features, AI coaching, cloud sync, gamification points.
