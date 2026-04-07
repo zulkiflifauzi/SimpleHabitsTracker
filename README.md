@@ -49,7 +49,7 @@ A clean, minimal, and fully offline habit tracker for Android. Build better habi
 | Framework | Flutter (Dart) |
 | Database | Drift (type-safe SQLite with reactive streams) |
 | State management | Riverpod |
-| Notifications | flutter_local_notifications |
+| Notifications | flutter_local_notifications + flutter_timezone |
 | Biometric auth | local_auth |
 | Settings persistence | shared_preferences |
 | Localisation | flutter_localizations + ARB files |
@@ -145,6 +145,7 @@ lib/
 | v2.1 ✅ | ✅ In-app User Guide (11 sections, bilingual EN + ID) |
 | v2.1.1 ✅ | ✅ Fix: New Habit modal not closing after save, ✅ Fix: app version showing 1.0.0 in device info |
 | v2.1.2 ✅ | ✅ Fix: Archive modal not closing after confirm |
+| v2.1.3 ✅ | ✅ Fix: notifications firing at wrong time (UTC timezone bug), ✅ Fix: notifications not firing when app is closed |
 
 ---
 
